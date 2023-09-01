@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --white: #ffffff;
+    --light_blue: #4382c9;
+    --light_gray: #cccccc;
+    --black: #222222;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Style Header */
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 70%;
+    height: 4rem;
+    background-color: var(--light_blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    color: var(--white);
+    text-align: center;
+}
+
+/* Style Section Container */
+
+.container-sections {
+    width: 70%;
+}
+
+.section {
+    width: 100%;
+    height: calc(100vh - 4rem);
+}
+
+/* Style Section Title */
+
+.section-title {
+    background-color: var(--light_gray);
+    text-align: center;
+    border-radius: 0 0 .5rem .5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workspace {
+    margin: .5rem 0;
+    height: calc(100% - 4rem);
+    border: solid 1px;
+    border-radius: .5rem;
+    border-color: var(--light_gray);
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1);
+}
+
+/* Style Button */
+
+.button-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0;
+    background-color: var(--light_blue);
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.1);
+}
+
+.button-menu div {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+}
+
+.button-menu span{
+    background-color: var(--white);
+    width: 80%;
+    height: 4px;
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .5s, width .5s;
+}
+
+/* Reverse Style Button */
+
+.button-menu .span-line1 {
+    transform: translate(-50%, -12px);
+}
+
+.button-menu .span-line3 {
+    transform: translate(-50%, 8px);
+}
+
+.openmenu .span-line1 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.openmenu .span-line3 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.openmenu .span-line2 {
+    width: 0;
+}
