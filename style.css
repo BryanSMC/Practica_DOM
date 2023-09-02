@@ -68,6 +68,14 @@ img {
 
 }
 
+.section:first-child {
+    margin-top: calc(-4rem);
+}
+
+.section:last-child {
+    margin-bottom: 4rem;
+}
+
 /* Style Section Title */
 
 .section-title {
@@ -82,7 +90,7 @@ img {
 
 .workspace {
     margin: .5rem 0;
-    height: calc(100% - 4rem);
+    height: 100%;
     border: solid 1px;
     border-radius: .5rem;
     border-color: var(--light_gray);
@@ -97,14 +105,16 @@ img {
     position: fixed;
     top: 0;
     /* left: -100%; */
-    background-color: rgba(0, 0, 0, 0.750);
+    background-color: rgba(0, 0, 0, 0.650);
     z-index: 100;
-    transition: transform .3s ease;
-    transform: translate(0, -100%);
+    clip-path: circle(0 at 97% 97%);
+    transition: transform .3s ease, opacity .5s ease, clip-path .7s ease;
+
 }
 
 .menu.is-active {
     transform: translate(0, 0);
+    clip-path: circle(100% at center);
 }
 
 .menu-container {
