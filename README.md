@@ -22,7 +22,7 @@ El repositorio se enfoca en las siguientes herramientas:
 
 ## Ejercicios
 
-1. - [ ] Menu Hamburguesa
+1. - [X] Menu Hamburguesa
 2. - [ ] Reloj Digital
 3. - [ ] Alarma Sonora
 4. - [ ] Eventos de Teclado (Atajos)
