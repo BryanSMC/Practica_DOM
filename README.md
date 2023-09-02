@@ -1,5 +1,7 @@
 # Repositorio de Práctica del DOM con JavaScript, CSS y HTML
 
+**Este repositorio contiene una serie de ejercicios prácticos** para aprender y mejorar mis habilidades con el **DOM (Document Object Model)**, usando **JavaScript, CSS, HTML, Git y GitHub**. El DOM es una interfaz que representa la estructura de un documento HTML como un árbol de nodos, y permite manipular su contenido y apariencia mediante código. Con estos ejercicios, pretendo explorar las diferentes formas de **acceder, crear, modificar y eliminar elementos del DOM**, así como aplicar **estilos y eventos** a los mismos. También uso **Git y GitHub** para gestionar las versiones de mi código.
+
 ## Contenido
 
 En este repositorio, se encuentran los siguientes elementos:
