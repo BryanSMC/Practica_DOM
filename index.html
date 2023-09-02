@@ -8,56 +8,15 @@
     <link rel="stylesheet" href="./style.css">
     <title>Practica del DOM</title>
 </head>
+
 <body>
     <header class="header">
-        <h1 class="header-title">Ejercicios del DOM</h1>
+        <a href="#" class="header-click">
+            <h1 class="header-title">Ejercicios del DOM</h1>
+        </a>
     </header>
 
-    <main class="container-sections">
-        <section class="section">
-            <h2 class="section-title">Sección 1</h2>
-            <div class="workspace">
-                
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Sección 2</h2>
-            <div class="workspace">
-                
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Sección 3</h2>
-            <div class="workspace">
-                
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Sección 4</h2>
-            <div class="workspace">
-                
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Sección 5</h2>
-            <div class="workspace">
-                
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Sección 6</h2>
-            <div class="workspace">
-                
-            </div>
-        </section>
-    </main>
-
-    <button class="button-menu" id="menu">
+    <button class="button-menu is-active">
         <div>
             <span class="span-line1"></span>
             <span class="span-line2"></span>
@@ -65,6 +24,62 @@
         </div>
     </button>
 
-    <script type="module" src="./js/seccion_uno.js"></script>
+    <menu class="menu">
+        <nav class="menu-container">
+            <a href="#seccion1" class="menu-options">Sección 1</a>
+            <a href="#seccion2" class="menu-options">Sección 2</a>
+            <a href="#seccion3" class="menu-options">Sección 3</a>
+            <a href="#seccion4" class="menu-options">Sección 4</a>
+            <a href="#seccion5" class="menu-options">Sección 5</a>
+            <a href="#seccion6" class="menu-options">Sección 6</a>
+        </nav>
+    </menu>
+
+    <main class="container-sections">
+        <section class="section" id="seccion1">
+            <h2 class="section-title">Sección 1</h2>
+            <div class="workspace">
+
+            </div>
+        </section>
+
+        <section class="section" id="seccion2">
+            <h2 class="section-title">Sección 2</h2>
+            <div class="workspace">
+
+            </div>
+        </section>
+
+        <section class="section" id="seccion3">
+            <h2 class="section-title">Sección 3</h2>
+            <div class="workspace">
+
+            </div>
+        </section>
+
+        <section class="section" id="seccion4">
+            <h2 class="section-title">Sección 4</h2>
+            <div class="workspace">
+
+            </div>
+        </section>
+
+        <section class="section" id="seccion5">
+            <h2 class="section-title">Sección 5</h2>
+            <div class="workspace">
+
+            </div>
+        </section>
+
+        <section class="section" id="seccion6">
+            <h2 class="section-title">Sección 6</h2>
+            <div class="workspace">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/index_dom.js" type="module"></script>
 </body>
+
 </html>

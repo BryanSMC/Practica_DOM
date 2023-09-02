@@ -12,6 +12,10 @@
     --black: #222222;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -20,6 +24,12 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Style Header */
@@ -35,6 +45,10 @@ body {
     align-items: center;
 }
 
+.header-click {
+    text-decoration: none;
+}
+
 .header-title {
     color: var(--white);
     text-align: center;
@@ -47,8 +61,11 @@ body {
 }
 
 .section {
+    padding-top: 4rem;
     width: 100%;
+    max-width: 100%;
     height: calc(100vh - 4rem);
+
 }
 
 /* Style Section Title */
@@ -69,10 +86,55 @@ body {
     border: solid 1px;
     border-radius: .5rem;
     border-color: var(--light_gray);
-    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.1);
 }
 
-/* Style Button */
+/* Style Menu Overlay */
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    /* left: -100%; */
+    background-color: rgba(0, 0, 0, 0.750);
+    z-index: 100;
+    transition: transform .3s ease;
+    transform: translate(0, -100%);
+}
+
+.menu.is-active {
+    transform: translate(0, 0);
+}
+
+.menu-container {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-options {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 2rem;
+    color: var(--light_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+}
+
+.menu-options:hover {
+    background-color: var(--light_blue);
+    color: var(--black);
+    transform: scale(1.2);
+}
+
+/* Style Menu Button */
 
 .button-menu {
     display: flex;
@@ -88,7 +150,13 @@ body {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    box-shadow: 0px 0px 13px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+    transition: transform .5s ease;
+}
+
+.button-menu:hover {
+    transform: scale(1.1);
 }
 
 .button-menu div {
@@ -97,7 +165,7 @@ body {
     position: relative;
 }
 
-.button-menu span{
+.button-menu span {
     background-color: var(--white);
     width: 80%;
     height: 4px;
@@ -107,7 +175,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform .5s, width .5s;
+    transition: transform .5s ease, width .5s ease;
 }
 
 /* Reverse Style Button */
