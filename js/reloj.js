@@ -4,12 +4,12 @@ export { startTime, finalizarReloj }
 /* Imports */
 import { $formato, $reloj } from "./index_dom.js";
 
+/* Codigo */
 let intervalo;
 
 function startTime() {
 
     function currentTime() {
-        console.log("La función currentTime se está ejecutando.");
 
         let date = new Date();
         let hour = date.getHours();
