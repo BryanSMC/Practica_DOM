@@ -24,7 +24,7 @@ El repositorio se enfoca en las siguientes herramientas:
 
 1. - [X] Menu Hamburguesa
 2. - [X] Reloj Digital
-3. - [ ] Alarma Sonora
+3. - [X] Alarma Sonora
 4. - [ ] Eventos de Teclado (Atajos)
 5. - [ ] Eventos del Teclado ( Movimientos y Colisiones )
 6. - [ ] Cuenta Regresiva ( countdown )
