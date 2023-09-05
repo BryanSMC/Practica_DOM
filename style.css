@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 :root {
@@ -89,6 +89,10 @@ img {
 }
 
 .workspace {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: .5rem 0;
     height: 100%;
     border: solid 1px;
@@ -208,4 +212,63 @@ img {
 
 .openmenu .span-line2 {
     width: 0;
+}
+
+/* RELOJ con Formato*/
+
+.reloj-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto .5rem;
+    background-color: var(--black);
+    padding: 2rem 2rem;
+    border-radius: .5rem;
+    height: 8rem;
+    gap: 1rem;
+}
+
+.reloj {
+    font-size: 4rem;
+    text-align: center;
+    width: 16rem;
+    color: var(--light_blue);
+}
+
+.formato {
+    font-size: 4rem;
+    text-align: center;
+    width: 4.5rem;
+    color: var(--light_blue);
+}
+
+/* Botones Reloj */
+
+.botones-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    margin: .5rem auto 0;
+    gap: 2rem;
+}
+
+.boton-reloj {
+    font-size: 1.2rem;
+    padding: .3rem .7rem;
+    border: none;
+    background-color: var(--light_gray);
+    border-radius: .5rem;
+    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.boton-reloj:hover {
+    transform: scale(1.1);
+}
+
+.no-hover {
+    pointer-events: none;
 }
