@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Practica del DOM</title>
 </head>
@@ -26,7 +26,7 @@
 
     <menu class="menu">
         <nav class="menu-container">
-            <a href="#seccion1" class="menu-options">Sección 1</a>
+            <a href="#seccion1" class="menu-options">Reloj Digital</a>
             <a href="#seccion2" class="menu-options">Sección 2</a>
             <a href="#seccion3" class="menu-options">Sección 3</a>
             <a href="#seccion4" class="menu-options">Sección 4</a>
@@ -37,10 +37,22 @@
 
     <main class="container-sections">
         <section class="section" id="seccion1">
-            <h2 class="section-title">Sección 1</h2>
+            <h2 class="section-title">Reloj Digital</h2>
+
             <div class="workspace">
 
+                <div class="reloj-container">
+                    <p class="reloj" id="reloj"></p>
+                    <p class="formato" id="formato"></p>
+                </div>
+
+                <div class="botones-container">
+                    <input type="button" value="Iniciar Reloj" class="boton-reloj" id="iniciar-reloj">
+                    <input type="button" value="Finalizar Reloj" class="boton-reloj" id="finalizar-reloj">
+                </div>
+
             </div>
+
         </section>
 
         <section class="section" id="seccion2">
