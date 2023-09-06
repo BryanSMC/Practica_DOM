@@ -299,3 +299,20 @@ img {
 .btn-alarma:hover {
     transform: scale(1.1);
 }
+
+/* Eventos del teclado */
+
+.stage {
+    display: flex;
+    min-width: 50vw;
+    min-height: 50vh;
+    background-color: var(--black);
+}
+
+.ball {
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--light_blue);
+}

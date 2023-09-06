@@ -5,6 +5,7 @@ export { $reloj, $formato }
 import hamburgerMenu from "./menu_hamburguesa.js";
 import { finalizarReloj, startTime } from "./reloj.js";
 import { sound } from "./alarma_sonora.js";
+import { atajo, moveBall } from "./eventos_teclado.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -54,5 +55,14 @@ $pausar.addEventListener("click", () => {
     $reproducir.classList.remove("no-hover");
 })
 
+/* Eventos de teclado */
+
+d.addEventListener("keydown", (e) => {
+    moveBall(e, ".ball", ".stage")
+})
+
+d.addEventListener("keydown", (e) => {
+    atajo(e);
+});
 
 console.log("El archivo js/index_dom.js se está ejecutando correctamente.");
