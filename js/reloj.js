@@ -15,6 +15,7 @@ function startTime() {
         let hour = date.getHours();
         let minute = date.getMinutes();
         let second = date.getSeconds();
+        const regex = /^0/;
 
         hour = (hour < 10) ? "0" + hour : hour;
         minute = (minute < 10) ? "0" + minute : minute;
@@ -29,7 +30,7 @@ function startTime() {
             ampm = `AM`
         }
 
-        if (hour <= 12) {
+        if (!regex.test(hour)) {
             hour = `0${hour}`
         }
 
