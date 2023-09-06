@@ -6,6 +6,7 @@ import hamburgerMenu from "./menu_hamburguesa.js";
 import { finalizarReloj, startTime } from "./reloj.js";
 import { sound } from "./alarma_sonora.js";
 import { atajo, moveBall } from "./eventos_teclado.js";
+import { currentCDown } from "./cuenta_regresiva.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -64,5 +65,11 @@ d.addEventListener("keydown", (e) => {
 d.addEventListener("keydown", (e) => {
     atajo(e);
 });
+
+/* Cuenta Regresiva */
+
+d.addEventListener("DOMContentLoaded", () => {
+    currentCDown();
+})
 
 console.log("El archivo js/index_dom.js se está ejecutando correctamente.");
