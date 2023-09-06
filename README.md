@@ -27,7 +27,7 @@ El repositorio se enfoca en las siguientes herramientas:
 3. - [X] Alarma Sonora
 4. - [X] Eventos de Teclado (Atajos)
 5. - [X] Eventos del Teclado ( Movimientos y Colisiones )
-6. - [ ] Cuenta Regresiva ( countdown )
+6. - [X] Cuenta Regresiva ( countdown )
 7. - [ ] Botón de Scroll
 8. - [ ] Tema Dark / Light
 9. - [ ] Tema Dark / Light con localStorage
