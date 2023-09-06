@@ -14,6 +14,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
 }
 
 body {
@@ -65,7 +66,7 @@ img {
     width: 100%;
     max-width: 100%;
     height: calc(100vh - 4rem);
-
+    scroll-snap-align: start;
 }
 
 .section:first-child {
@@ -315,4 +316,34 @@ img {
     height: 4rem;
     border-radius: 50%;
     background-color: var(--light_blue);
+}
+
+/* Cuenta Regresiva */
+
+.msg-cdown {
+    font-size: 6rem;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cdown-container {
+    width: 38rem;
+    height: 8rem;
+    background-color: var(--black);
+    padding: 2rem 2rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light_blue);
+    text-align: center;
+    gap: 4rem;
+}
+
+.year, .day,.hour,
+.minute, .second {
+    font-size: 2rem;
+    margin-bottom: .3rem;
 }
