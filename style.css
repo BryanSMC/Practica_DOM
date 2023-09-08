@@ -99,6 +99,7 @@ img {
     border: solid 1px;
     border-radius: .5rem;
     border-color: var(--light_gray);
+    background-color: var(--white);
     box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.1);
 }
 
