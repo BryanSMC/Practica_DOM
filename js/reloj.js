@@ -1,6 +1,3 @@
-/* Exports */
-export { startTime, finalizarReloj }
-
 /* Imports */
 import { $formato, $reloj } from "./index_dom.js";
 
@@ -50,3 +47,6 @@ function finalizarReloj() {
     $reloj.innerHTML = "";
     $formato.innerHTML = "";
 }
+
+/* Exports */
+export { startTime, finalizarReloj }

@@ -1,5 +1,3 @@
-export { moveBall, atajo }
-
 const d = document;
 let x = 0,
     y = 0;
@@ -55,3 +53,5 @@ function atajo(e) {
         prompt(`Haz lanzado un prompt con el teclado`);
     };
 }
+
+export { moveBall, atajo }

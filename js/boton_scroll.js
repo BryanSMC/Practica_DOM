@@ -1,5 +1,3 @@
-export { scrollUp }
-
 const d = document;
 
 function scrollUp(btn) {
@@ -24,3 +22,5 @@ function scrollUp(btn) {
 }
 
 scrollUp(".btn-scroll");
+
+export { scrollUp }

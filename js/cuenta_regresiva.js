@@ -1,11 +1,9 @@
-export { currentCDown }
-
 const d = document;
 let intervalo;
 
 const currentCDown = () => {
     function cDown() {
-        const cDate = new Date("Dec 31, 2023 24:00:00").getTime();
+        const cDate = new Date("Sep 29, 2023 18:00:00").getTime();
         const now = new Date().getTime();
         const difference = cDate - now;
 
@@ -50,3 +48,4 @@ const currentCDown = () => {
     intervalo = setInterval(cDown, 1000);
 
 }
+export { currentCDown }
