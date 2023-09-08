@@ -1,5 +1,3 @@
-import { $scroll } from "./index_dom.js";
-
 export { scrollUp }
 
 const d = document;
@@ -10,18 +8,19 @@ function scrollUp(btn) {
     window.onscroll = function () {
         let currentScroll = d.documentElement.scrollTop || d.body.scrollTop;
 
-        if (currentScroll > 500) {
-            $scrollActive.classList.add("btn-mostrar");
+        if (currentScroll > 600) {
             $scrollActive.classList.remove("btn-ocultar");
-        } else if (currentScroll < 500) {
-            $scrollActive.classList.remove("btn-mostrar");
+        } else if (currentScroll < 600) {
             $scrollActive.classList.add("btn-ocultar");
         }
     };
 
     $scrollActive.addEventListener("click", () => {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            behavior: "smooth",
+            top: 0,
+        });
     });
 }
 
-scrollUp(".scroll-active");
+scrollUp(".btn-scroll");
