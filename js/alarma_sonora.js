@@ -5,4 +5,4 @@ export { sound }
 
 /* Codigo */
 
-let sound = new Audio("/src/audio/alarma.mp3");
+let sound = new Audio("/assets/audio/alarma.mp3");
