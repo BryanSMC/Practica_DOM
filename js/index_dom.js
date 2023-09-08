@@ -1,6 +1,3 @@
-/* Exports */
-export { $reloj, $formato, $scroll }
-
 /* Imports */
 import hamburgerMenu from "./menu_hamburguesa.js";
 import { finalizarReloj, startTime } from "./reloj.js";
@@ -8,6 +5,7 @@ import { sound } from "./alarma_sonora.js";
 import { atajo, moveBall } from "./eventos_teclado.js";
 import { currentCDown } from "./cuenta_regresiva.js";
 import { scrollUp } from "./boton_scroll.js";
+import modoOscuro from "./modo_oscuro.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -18,9 +16,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
 /* Obteniendo para el reloj */
 let $reloj,
-    $formato,
-    $inicio = d.getElementById("iniciar-reloj"),
-    $fin = d.getElementById("finalizar-reloj");
+$formato,
+$inicio = d.getElementById("iniciar-reloj"),
+$fin = d.getElementById("finalizar-reloj");
 
 $inicio.addEventListener("click", (e) => {
     $reloj = d.getElementById("reloj");
@@ -40,8 +38,8 @@ $fin.addEventListener("click", (e) => {
 /* Obteniendo para la alarma */
 
 let $alarma = d.getElementById("alarma"),
-    $reproducir = d.getElementById("reproducir-alarma"),
-    $pausar = d.getElementById("pausar-alarma");
+$reproducir = d.getElementById("reproducir-alarma"),
+$pausar = d.getElementById("pausar-alarma");
 
 $reproducir.addEventListener("click", () => {
     sound.play();
@@ -82,4 +80,14 @@ $scroll.addEventListener("click", () => {
 })
 
 
+/* Tema Oscuro */
+
+d.addEventListener("DOMContentLoaded", () => {
+    modoOscuro(".btn-darkmode", "dark-theme")
+});
+
 console.log("El archivo js/index_dom.js se está ejecutando correctamente.");
+
+
+/* Exports */
+export { $reloj, $formato, $scroll }
