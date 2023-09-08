@@ -78,7 +78,7 @@ d.addEventListener("DOMContentLoaded", () => {
 let $scroll = d.getElementById("btn-scroll");
 
 $scroll.addEventListener("click", () => {
-    scrollUp(".scroll-active");
+    scrollUp(".btn-scroll");
 })
 
 
