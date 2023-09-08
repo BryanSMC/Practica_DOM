@@ -83,8 +83,8 @@ $scroll.addEventListener("click", () => {
 /* Tema Oscuro */
 
 d.addEventListener("DOMContentLoaded", () => {
-    modoOscuro(".btn-darkmode", "dark-theme")
 });
+modoOscuro(".btn-darkmode", "dark-theme")
 
 console.log("El archivo js/index_dom.js se está ejecutando correctamente.");
 
