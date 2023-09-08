@@ -342,8 +342,11 @@ img {
     gap: 4rem;
 }
 
-.year, .day,.hour,
-.minute, .second {
+.year,
+.day,
+.hour,
+.minute,
+.second {
     font-size: 2rem;
     margin-bottom: .3rem;
 }
@@ -362,7 +365,7 @@ img {
     right: 1rem;
     box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.1);
     z-index: 300;
-    transition: transform .5s ease, cursor .5s ease;
+    transition: all .3s ease-out;
 }
 
 .btn-scroll:hover {
@@ -382,4 +385,34 @@ img {
 .btn-ocultar {
     opacity: 0;
     visibility: hidden;
+}
+
+/* Boton DarKmode */
+
+.btn-darkmode {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0;
+    background-color: var(--light_blue);
+    padding: .5rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: all .3s ease-out;
+}
+
+.btn-darkmode:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.moon-icon, .sun-icon {
+    fill: var(--white);
+}
+
+.dark-theme {
+    background-color: var(--black);
 }
