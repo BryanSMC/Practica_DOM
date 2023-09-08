@@ -29,7 +29,7 @@ El repositorio se enfoca en las siguientes herramientas:
 5. - [X] Eventos del Teclado ( Movimientos y Colisiones )
 6. - [X] Cuenta Regresiva ( countdown )
 7. - [X] Botón de Scroll
-8. - [ ] Tema Dark / Light
+8. - [X] Tema Dark / Light
 9. - [ ] Tema Dark / Light con localStorage
 10. - [ ] Responsive con JavaScript
 11. - [ ] Responsive Tester
