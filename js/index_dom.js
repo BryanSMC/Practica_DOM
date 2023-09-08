@@ -1,5 +1,5 @@
 /* Exports */
-export { $reloj, $formato }
+export { $reloj, $formato, $scroll }
 
 /* Imports */
 import hamburgerMenu from "./menu_hamburguesa.js";
@@ -7,6 +7,7 @@ import { finalizarReloj, startTime } from "./reloj.js";
 import { sound } from "./alarma_sonora.js";
 import { atajo, moveBall } from "./eventos_teclado.js";
 import { currentCDown } from "./cuenta_regresiva.js";
+import { scrollUp } from "./boton_scroll.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -71,5 +72,14 @@ d.addEventListener("keydown", (e) => {
 d.addEventListener("DOMContentLoaded", () => {
     currentCDown();
 })
+
+/* Boton Scroll */
+
+let $scroll = d.getElementById("btn-scroll");
+
+$scroll.addEventListener("click", () => {
+    scrollUp(".scroll-active");
+})
+
 
 console.log("El archivo js/index_dom.js se está ejecutando correctamente.");
