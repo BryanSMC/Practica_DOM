@@ -32,7 +32,7 @@ El repositorio se enfoca en las siguientes herramientas:
 8. - [X] Tema Dark / Light
 9. - [X] Tema Dark / Light con localStorage
 10. - [X] Responsive con JavaScript
-11. - [ ] Responsive Tester
+11. - [X] Responsive Tester
 12. - [ ] Detección de Dispositivos con el User Agent
 13. - [ ] Detección del Estado de la Red
 14. - [ ] Detección de la WebCam
