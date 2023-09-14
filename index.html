@@ -23,7 +23,7 @@
             <a href="#seccion3" class="menu-options">Eventos de Teclado</a>
             <a href="#seccion4" class="menu-options">Cuenta Regresiva</a>
             <a href="#seccion5" class="menu-options">Responsive con JS</a>
-            <a href="#seccion6" class="menu-options">Sección 6</a>
+            <a href="#seccion6" class="menu-options">Responsive Tester</a>
             <a href="#seccion7" class="menu-options">Sección 7</a>
             <a href="#seccion8" class="menu-options">Sección 8</a>
             <a href="#seccion9" class="menu-options">Sección 9</a>
@@ -108,9 +108,23 @@
         </section>
 
         <section class="section" id="seccion6">
-            <h2 class="section-title">Sección 6</h2>
+            <h2 class="section-title">Responsive Tester</h2>
             <div class="workspace">
+                <form autocomplete="off" class="form-tester" id="abrir">
+                    <label for="url" class="label-form">Url</label>
+                    <input type="url" placeholder="https://www.example.com/index.html" id="url" class="input-form url">
 
+                    <label for="ancho" class="label-form">Ancho</label>
+                    <input type="number" placeholder="0" id="ancho" class="input-form ancho">
+
+                    <label for="alto" class="label-form">Alto</label>
+                    <input type="number" placeholder="0" id="alto" class="input-form alto">
+
+                    <div class="container-submits">
+                        <button type="submit" value="Abrir" class="abrir">Abrir</button>
+                        <button type="button" value="Cerrar" id="cerrar" class="cerrar">Cerrar</button>
+                    </div>
+                </form>
             </div>
         </section>
         <section class="section" id="seccion7">
