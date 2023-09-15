@@ -491,3 +491,23 @@ img {
     justify-content: center;
     gap: 2rem;
 }
+
+/* Detección de Conexion */
+
+.online,
+.offline {
+    position: sticky;
+    top: 0;
+    z-index: 1300;
+    padding: 1rem;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #008000;
+    color: var(--white);
+}
+
+.offline {
+    background-color: #ff0000;
+}
