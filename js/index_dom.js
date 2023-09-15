@@ -9,6 +9,7 @@ import modoOscuro from "./modo_oscuro.js";
 import responsiveMedia from "./objeto_responsive.js";
 import abrirUrl from "./responsive_tester.js";
 import { uuser } from "./user_agent.js";
+import { detectCon } from "./deteccion_conex.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -115,6 +116,10 @@ abrirUrl(
 /* User Agent */
 
 uuser("user-agent")
+
+/* Detección de conexion */
+
+detectCon();
 
 /* Exports */
 export { $reloj, $formato, $scroll }
