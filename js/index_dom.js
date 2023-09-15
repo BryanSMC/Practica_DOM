@@ -8,6 +8,7 @@ import { scrollUp } from "./boton_scroll.js";
 import modoOscuro from "./modo_oscuro.js";
 import responsiveMedia from "./objeto_responsive.js";
 import abrirUrl from "./responsive_tester.js";
+import { uuser } from "./user_agent.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -111,6 +112,9 @@ abrirUrl(
     d.getElementById('cerrar')
 );
 
+/* User Agent */
+
+uuser("user-agent")
 
 /* Exports */
 export { $reloj, $formato, $scroll }
