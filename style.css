@@ -96,6 +96,7 @@ img {
     align-items: center;
     margin: .5rem 0;
     height: 100%;
+    padding: 4rem;
     border: solid 1px;
     border-radius: .5rem;
     border-color: var(--light_gray);
@@ -477,4 +478,16 @@ img {
     background-color: var(--light_blue);
     color: var(--white);
     cursor: pointer;
+}
+
+/* User Agent */
+
+#user-agent {
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
