@@ -530,3 +530,15 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+/* Detección de Ubicación */
+
+#posicion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    margin-top: 2rem;
+}
