@@ -116,7 +116,12 @@ img {
     z-index: 500;
     clip-path: circle(0 at 97% 97%);
     transition: transform .3s ease, opacity .5s ease, clip-path .7s ease;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 
+.menu-scroll-hidden {
+    overflow-y: hidden;
 }
 
 .menu.is-active {
@@ -125,6 +130,7 @@ img {
 }
 
 .menu-container {
+    margin-top: 6.8rem;
     list-style: none;
     position: absolute;
     width: 100%;
