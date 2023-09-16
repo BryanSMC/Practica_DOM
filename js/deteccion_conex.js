@@ -1,6 +1,5 @@
 let d = document,
-    w = window,
-    n = navigator;
+    w = window;
 
 function detectCon() {
     const online = () => {
