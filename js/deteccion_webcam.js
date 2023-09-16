@@ -13,7 +13,6 @@ function webcam(cam) {
             .catch((err) => {
                 $cam.insertAdjacentHTML("afterend", `<p class"center-items">Sucedio un error con la camara o sus permisos</p>
                 <p><mark>${err}</mark></p>`)
-                alert(`Sucedio un error con la camara o sus permisos ${err}`);
             })
 
     }
