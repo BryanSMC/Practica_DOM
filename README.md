@@ -36,7 +36,7 @@ El repositorio se enfoca en las siguientes herramientas:
 12. - [X] Detección de Dispositivos con el User Agent
 13. - [X] Detección del Estado de la Red
 14. - [X] Detección de la WebCam
-15. - [ ] Detección de la Geolocalización
+15. - [X] Detección de la Geolocalización
 16. - [ ] Filtros de Búsqueda
 17. - [ ] Sorteo Digital
 18. - [ ] Responsive Slider
