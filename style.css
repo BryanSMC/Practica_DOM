@@ -120,10 +120,6 @@ img {
     overflow-x: hidden;
 }
 
-.menu-scroll-hidden {
-    overflow-y: hidden;
-}
-
 .menu.is-active {
     transform: translate(0, 0);
     clip-path: circle(100% at center);
@@ -516,4 +512,21 @@ img {
 
 .offline {
     background-color: #ff0000;
+}
+
+/* Detección Webcam */
+
+#webcam {
+    width: auto;
+    height: auto;
+    background-color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.center-items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
