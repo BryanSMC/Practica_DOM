@@ -10,12 +10,13 @@ import responsiveMedia from "./objeto_responsive.js";
 import abrirUrl from "./responsive_tester.js";
 import { uuser } from "./user_agent.js";
 import { detectCon } from "./deteccion_conex.js";
+import { webcam } from "./deteccion_webcam.js";
 
 /* Obteniendo para el menu */
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
-    hamburgerMenu(".button-menu", ".menu", ".menu-container", "scroll");
+    hamburgerMenu(".button-menu", ".menu", ".menu-container");
 });
 
 /* Obteniendo para el reloj */
@@ -122,6 +123,8 @@ uuser("user-agent")
 detectCon();
 
 /* Detección Webcam */
+
+webcam("webcam")
 
 /* Exports */
 export { $reloj, $formato, $scroll }
