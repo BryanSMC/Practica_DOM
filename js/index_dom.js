@@ -11,6 +11,7 @@ import abrirUrl from "./responsive_tester.js";
 import { uuser } from "./user_agent.js";
 import { detectCon } from "./deteccion_conex.js";
 import { webcam } from "./deteccion_webcam.js";
+import { posicionActual } from "./deteccion_geolo.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -125,6 +126,10 @@ detectCon();
 /* Detección Webcam */
 
 webcam("webcam")
+
+/* Deteccion de ubicacion */
+
+posicionActual(`posicion`)
 
 /* Exports */
 export { $reloj, $formato, $scroll }
