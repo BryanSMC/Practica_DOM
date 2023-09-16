@@ -15,7 +15,7 @@ import { detectCon } from "./deteccion_conex.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
-    hamburgerMenu(".button-menu", ".menu", ".menu-container")
+    hamburgerMenu(".button-menu", ".menu", ".menu-container", "scroll");
 });
 
 /* Obteniendo para el reloj */
@@ -120,6 +120,8 @@ uuser("user-agent")
 /* Detección de conexion */
 
 detectCon();
+
+/* Detección Webcam */
 
 /* Exports */
 export { $reloj, $formato, $scroll }
