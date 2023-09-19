@@ -37,7 +37,7 @@ El repositorio se enfoca en las siguientes herramientas:
 13. - [X] Detección del Estado de la Red
 14. - [X] Detección de la WebCam
 15. - [X] Detección de la Geolocalización
-16. - [ ] Filtros de Búsqueda
+16. - [X] Filtros de Búsqueda
 17. - [ ] Sorteo Digital
 18. - [ ] Responsive Slider
 19. - [ ] ScrollSpy con Intersection Observer
