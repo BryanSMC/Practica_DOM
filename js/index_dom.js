@@ -12,6 +12,7 @@ import { uuser } from "./user_agent.js";
 import { detectCon } from "./deteccion_conex.js";
 import { webcam } from "./deteccion_webcam.js";
 import { posicionActual } from "./deteccion_geolo.js";
+import { filtro } from "./filtro_busqueda.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -130,6 +131,10 @@ webcam("webcam")
 /* Deteccion de ubicacion */
 
 posicionActual(`posicion`)
+
+/* Filtro de busqueda */
+
+filtro("search", ".card", "no-results")
 
 /* Exports */
 export { $reloj, $formato, $scroll }
