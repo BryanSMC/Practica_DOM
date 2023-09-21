@@ -13,6 +13,7 @@ import { detectCon } from "./deteccion_conex.js";
 import { webcam } from "./deteccion_webcam.js";
 import { posicionActual } from "./deteccion_geolo.js";
 import { filtro } from "./filtro_busqueda.js";
+import { sorteoDigital } from "./sorteo_digital.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -126,15 +127,19 @@ detectCon();
 
 /* Detección Webcam */
 
-webcam("webcam")
+webcam("webcam");
 
 /* Deteccion de ubicacion */
 
-posicionActual(`posicion`)
+posicionActual(`posicion`);
 
 /* Filtro de busqueda */
 
-filtro("search", ".card", "no-results")
+filtro("search", ".card", "no-results");
+
+/* Sorteo Digital */
+
+sorteoDigital("input-sorteo", "boton-sorteo", "contenedor-items", "btn-sortear", "result-sorteo");
 
 /* Exports */
 export { $reloj, $formato, $scroll }
