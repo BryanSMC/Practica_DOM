@@ -14,6 +14,7 @@ import { webcam } from "./deteccion_webcam.js";
 import { posicionActual } from "./deteccion_geolo.js";
 import { filtro } from "./filtro_busqueda.js";
 import { sorteoDigital } from "./sorteo_digital.js";
+import { slider } from "./responsive_slider.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -140,6 +141,10 @@ filtro("search", ".card", "no-results");
 /* Sorteo Digital */
 
 sorteoDigital("input-sorteo", "boton-sorteo", "contenedor-items", "btn-sortear", "result-sorteo");
+
+/* Responsive Slider */
+
+slider("slider", ".slider-foto", "btnslider-left", "btnslider-right")
 
 /* Exports */
 export { $reloj, $formato, $scroll }
