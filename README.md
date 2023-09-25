@@ -39,7 +39,7 @@ El repositorio se enfoca en las siguientes herramientas:
 15. - [X] Detección de la Geolocalización
 16. - [X] Filtros de Búsqueda
 17. - [X] Sorteo Digital
-18. - [ ] Responsive Slider
+18. - [X] Responsive Slider
 19. - [ ] ScrollSpy con Intersection Observer
 20. - [ ] Video Inteligente con Intersection Observer & VisibilityChange
 21. - [ ] Validación de Formularios con HTML5
