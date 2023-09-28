@@ -40,4 +40,4 @@ El repositorio se enfoca en las siguientes herramientas:
 16. - [X] Filtros de Búsqueda
 17. - [X] Sorteo Digital
 18. - [X] Responsive Slider
-19. - [ ] Narrador ( Lector de Voz )
+19. - [X] Narrador ( Lector de Voz )
