@@ -15,6 +15,7 @@ import { posicionActual } from "./deteccion_geolo.js";
 import { filtro } from "./filtro_busqueda.js";
 import { sorteoDigital } from "./sorteo_digital.js";
 import { slider } from "./responsive_slider.js";
+import { narrador } from "./narrador.js";
 
 /* Obteniendo para el menu */
 const d = document;
@@ -92,8 +93,6 @@ $scroll.addEventListener("click", () => {
 /* Tema Oscuro */
 modoOscuro(".btn-darkmode", "dark-theme")
 
-console.log("El archivo js/index_dom.js se está ejecutando correctamente.");
-
 /* Objeto Responsive */
 
 d.addEventListener("DOMContentLoaded", () => {
@@ -144,7 +143,11 @@ sorteoDigital("input-sorteo", "boton-sorteo", "contenedor-items", "btn-sortear",
 
 /* Responsive Slider */
 
-slider("slider", ".slider-foto", "btnslider-left", "btnslider-right")
+slider("slider", ".slider-foto", "btnslider-left", "btnslider-right");
+
+/* Narrador */
+
+narrador("voz--selector", "voz--texto", "btn--voz");
 
 /* Exports */
 export { $reloj, $formato, $scroll }
